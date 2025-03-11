@@ -36,7 +36,7 @@ function TeamSelect({ onTeamSelect }) {
 
     return (
         <select onChange={(e) => onTeamSelect(e.target.value)}>
-          <option value="">Select a team</option>
+          <option value="">--Select a team--</option>
           {teams.map((team) => (
             <option key={team} value={team}>{team}</option>
           ))}
